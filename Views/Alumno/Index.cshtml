@@ -1,0 +1,14 @@
+@*
+    comentarios en razon
+    aca le indicamos al modelo que es FUERTEMENTE TIPADO, si no pusieramos el tipo de
+    modelo seria DEBILMENTE TIPADO.
+*@
+@model Alumno
+@{
+    ViewData["Title"] = "Alumno Page"; 
+    Layout = "Simple"; //busca en shared
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p><strong>Nombre Completo: </strong><i>@Model.Nombre @Model.Apellido</i></p>

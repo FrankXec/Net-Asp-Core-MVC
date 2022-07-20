@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Escuela Page"; 
+    Layout = "Simple"; //busca en shared
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2>@ViewBag.Valor</h2>
+
+<p><strong>Nombre: </strong><i>@Model.Nombre</i></p>
+<p><strong>Fecha Fundacion: </strong><i>@Model.AnioFundacion</i></p>

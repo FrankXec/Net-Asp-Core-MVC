@@ -1,0 +1,17 @@
+@*
+    comentarios en razon
+    aca le indicamos al modelo que es FUERTEMENTE TIPADO, si no pusieramos el tipo de
+    modelo seria DEBILMENTE TIPADO.
+*@
+@model IEnumerable<Alumno>
+@{
+    ViewData["Title"] = "Lista Alumnos Page"; 
+    Layout = "Simple"; //busca en shared
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in @Model)
+{
+    <partial name="SimpleAlumno" model="@item"/>
+}
